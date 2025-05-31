@@ -1,0 +1,10 @@
+in mongoose while connecting if using createConnection ( new version) then we cant use async await because it dosent return a
+promise 
+const connectionInstance = await mongoose.createConnection(
+      ${process.env.MONGODB_URL}/${DB_NAME}   wrong this is 
+
+hence we use only mongoose.connect
+and in createConnection there is no connection.host property
+
+if you chanhe anything in .env then nodemodule cant do anything we have to manuaaly restarrt
+ 
