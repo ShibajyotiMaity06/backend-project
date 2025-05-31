@@ -8,3 +8,14 @@ and in createConnection there is no connection.host property
 
 if you chanhe anything in .env then nodemodule cant do anything we have to manuaaly restarrt
  
+
+app.use(express.urlencoded({ extended: true }));
+this is because kabhi kabhi in url if u see shiba-maity like this for - or %40 like these ke liye chahhiye
+
+
+Status Codes :
+informational responses = 100-199
+succesful status = 200-299
+redirection status = 300-399
+client error messages = 400-499
+server error messages = 500-599
